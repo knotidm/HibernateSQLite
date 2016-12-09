@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">com.enigmabridge.hibernate.dialect.SQLiteDialect</property>
+        <property name="connection.url">jdbc:sqlite:C:/SQLite/chinook.db</property>
+        <property name="connection.driver_class">org.sqlite.JDBC</property>
+        <!--<property name="hbm2ddl.auto">create</property>-->
+        <mapping class="org.model.AlbumsEntity"/>
+        <mapping class="org.model.ArtistsEntity"/>
+        <mapping class="org.model.CustomersEntity"/>
+        <mapping class="org.model.EmployeesEntity"/>
+        <mapping class="org.model.GenresEntity"/>
+        <mapping class="org.model.InvoiceItemsEntity"/>
+        <mapping class="org.model.InvoicesEntity"/>
+        <mapping class="org.model.MediaTypesEntity"/>
+        <mapping class="org.model.PlaylistTrackEntity"/>
+        <mapping class="org.model.PlaylistsEntity"/>
+        <mapping class="org.model.TracksEntity"/>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+    </session-factory>
+</hibernate-configuration>
