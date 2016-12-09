@@ -12,8 +12,8 @@ if database dont exist yet use **<property name="hbm2ddl.auto">create</property>
 
 - Open Project Structure and Add Libraries using Maven:
 
-com.enigmabridge:hibernate4-sqlite-dialect:0.1.2 - this provides SQLiteDialect class in hibernate.cfg.xml:   
+search for com.enigmabridge:hibernate - this provides SQLiteDialect class in hibernate.cfg.xml:   
 **<property name="hibernate.dialect">com.enigmabridge.hibernate.dialect.SQLiteDialect</property>** (even its hibernate4 its working)
 
-org.ops4j.pax.jdbc:pax-jdbc-sqlite:0.6.0 - this provides JDBC class in hibernate.cfg.xml:
+search for org.xerial:sqlite - this provides JDBC class in hibernate.cfg.xml:
 **<property name="connection.driver_class">org.sqlite.JDBC</property>**
